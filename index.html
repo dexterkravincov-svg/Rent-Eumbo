@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eumbo – Rooms and apartments for rent in Namibia</title>
+<meta name="description" content="Eumbo lists rooms, bachelor flats and apartments for rent across Namibia. Owners post for just N$3.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="w nv">
+<a class="logo" href="#top"><i>🏠</i>Eumbo</a>
+<div class="links"><a class="l" href="#listings">Browse rentals</a><a class="l" href="#how">How it works</a><button class="btn ac" id="postBtn">Post a listing</button></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="w">
+<h1>A place to stay, found without the hassle</h1>
+<p>Rooms, bachelor flats and apartments across Namibia, listed by owners you can call or message directly.</p>
+<span class="tagline">Owners pay just N$3 to keep a listing posted</span>
+</div>
+<svg class="dunes" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 C240 10 420 20 640 62 C860 104 1080 90 1240 48 C1330 26 1390 30 1440 44 L1440 120 L0 120Z" fill="var(--bg)" opacity=".55"/><path d="M0 96 C220 52 460 58 700 92 C940 124 1160 96 1440 66 L1440 120 L0 120Z" fill="var(--bg)"/></svg>
+</header>
+
+<main class="w">
+<form class="search" id="sf" onsubmit="return false">
+<div><label for="fQ">Area or keyword</label><input id="fQ" placeholder="e.g. Khomasdal, furnished"></div>
+<div><label for="fTown">Town</label><select id="fTown"><option value="">All towns</option></select></div>
+<div><label for="fType">Type</label><select id="fType"><option value="">Any type</option><option>Room</option><option>Bachelor flat</option><option>Apartment</option><option>House</option></select></div>
+<div><label for="fMax">Max rent per month (N$)</label><input id="fMax" type="number" min="0" placeholder="e.g. 3000"></div>
+</form>
+
+<div class="stats"><div><b id="sN">0</b>active listings</div><div><b id="sT">0</b>towns covered</div><div><b>N$3</b>to post and stay live</div></div>
+
+<div class="head" id="listings"><h2>Available now</h2><span id="cnt"></span></div>
+<section class="grid" id="list"></section>
+
+<div class="head" id="how"><h2>Posting takes three steps</h2></div>
+<section class="steps">
+<div class="step"><i>1</i><h3>Add your place</h3><p class="mu">Enter the rent, location, a short description and add a photo.</p></div>
+<div class="step"><i>2</i><h3>Pay N$3</h3><p class="mu">Send the posting fee using the payment details shown at checkout.</p></div>
+<div class="step"><i>3</i><h3>Meet your tenant</h3><p class="mu">Your listing stays live for 30 days. Renters call or WhatsApp you directly.</p></div>
+</section>
+
+<section class="cta"><div><h2>Have a room or flat to rent out?</h2><p>Reach people looking right now. It costs N$3.</p></div><button class="btn ac" id="postBtn2">Post a listing</button></section>
+</main>
+
+<footer><div class="w"><span><b style="color:#fff">Eumbo</b> – rooms and apartments for rent in Namibia</span><span>© <span id="yr"></span> Eumbo</span></div></footer>
+<dialog id="dlg"><div class="mb" id="dbody"></div></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
